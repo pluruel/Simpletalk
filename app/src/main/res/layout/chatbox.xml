@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chatbox_"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="bottom">
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:id="@+id/chatbox_left"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/chatbox_left_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#000000"/>
+        <View
+            android:layout_width="0sp"
+            android:layout_height="10sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:id="@+id/left_gap_with_time"/>
+
+
+
+    <TextView
+        android:id="@+id/chatbox_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"
+        android:textSize="22sp"/>
+    <View
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:id="@+id/right_gap_with_time"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/chatbox_right_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#000000"
+        android:gravity="bottom"/>
+        <View
+            android:layout_width="0sp"
+            android:layout_height="6sp"/>
+    </LinearLayout>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:id="@+id/chatbox_right"/>
+</LinearLayout>

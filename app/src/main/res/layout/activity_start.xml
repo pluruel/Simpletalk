@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pluruel.juno.mychat.Intro"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#c4d2c1">
+
+        <ImageView
+
+
+            android:src="@drawable/st_title2"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/imageView" />
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+            android:id="@+id/view" />
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:text="서버 접속중..."
+        android:textColor="#535953"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/textView_intro"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+    </LinearLayout>
+</RelativeLayout>

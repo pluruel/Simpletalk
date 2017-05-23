@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pluruel.juno.mychat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/st_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name = "android.support.multidex.MultiDexApplication"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <activity android:name="com.pluruel.juno.mychat.MainActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name="com.pluruel.juno.mychat.Intro"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pluruel.juno.mychat.Methods.Length_Error_Dialog" android:theme="@android:style/Theme.Translucent">
+        </activity>
+        <activity android:name="com.pluruel.juno.mychat.Methods.Popup_Connection_Error" android:theme="@android:style/Theme.Translucent">
+        </activity>
+        <activity android:name="com.pluruel.juno.mychat.Methods.Popup_matching_new_partner" android:theme="@android:style/Theme.Translucent">
+        </activity>
+        <activity android:name="com.pluruel.juno.mychat.Methods.Titlebar_info" android:theme="@android:style/Theme.Translucent">
+        </activity>
+
+
+    </application>
+
+</manifest>
