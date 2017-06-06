@@ -102,7 +102,7 @@ public class NetworkManager {
 
             try {
                 if (mSocket != null) return;
-                mSocket = new Socket("119.193.37.243", 15478);
+                mSocket = new Socket("119.193.37.125", 15478);
                 mInputStream = mSocket.getInputStream();
                 mOutputStream = mSocket.getOutputStream();
                 mThreadManager.runRecvThread(mInputStream);
