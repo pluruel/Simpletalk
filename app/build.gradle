@@ -7,8 +7,8 @@ android {
         applicationId "com.pluruel.juno.mychat"
         minSdkVersion 19
         targetSdkVersion 24
-        versionCode 5
-        versionName "1.10"
+        versionCode 7
+        versionName "1.11a"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
